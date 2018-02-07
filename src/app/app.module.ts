@@ -8,6 +8,7 @@ import { APP_ROUTING } from './app.routes';
 
 // services
 import { InformacionService } from './services/informacion.service';
+import { ProductosService } from './services/productos.service';
 
 // componentes
 import { AppComponent } from './app.component';
@@ -16,7 +17,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProductoComponent } from './components/producto/producto.component';
-
 
 @NgModule({
   declarations: [
@@ -33,7 +33,8 @@ import { ProductoComponent } from './components/producto/producto.component';
     APP_ROUTING
   ],
   providers: [
-    InformacionService
+    InformacionService,
+    ProductosService
   ],
   bootstrap: [AppComponent]
 })
